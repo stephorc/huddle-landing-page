@@ -1,0 +1,36 @@
+/* ----------Common Styles---------- */
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* ----------Common Styles END---------- */
+
+.header {
+    background: linear-gradient(hsl(257, 40%, 49%),hsl(300, 69%, 71%));
+}
+
+.navbar {}
+.logo {}
+.row {}
+.col-2 {}
+.btn {}
+
+
+/* ----------Footer---------- */
+
+.attribution {
+    font-size: 1.1rem;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
