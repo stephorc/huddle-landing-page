@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./design/Solution - Frontend Mentor - Huddle landing page with single introductory section.jpg)
+![My solution](./design/Solution - Frontend Mentor - Huddle landing page with single introductory section.jpg)
 
 <!-- ### Links
 
