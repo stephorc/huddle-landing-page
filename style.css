@@ -20,6 +20,7 @@ body {
 
 /* ----------Common Styles END---------- */
 
+
 .main-pg-container {
     max-width: 130rem;
     margin: auto;
@@ -27,7 +28,7 @@ body {
     padding-right: 3rem;
 }
 .header .row {
-    margin-top: 3rem;
+    padding-top: 3rem;
 }
 .navbar {
     display: flex;
@@ -37,14 +38,16 @@ body {
 .logo img {
     width: 100%;
     height: 6rem;
-    margin-top: 2rem;
+    padding-top: 2rem;
     transition: all 0.5s;
 }
 .logo img:hover {
     transform: scale(110%);
 }
 
+
 /* --------Header Columns-------- */
+
 .row {
     display: flex;
     align-items: center;
@@ -67,16 +70,16 @@ body {
 .col-3 h1 {
     font-size: 4rem;
     line-height: 5rem;
-    margin-bottom: 3rem;
 }
 .col-3 p {
     font-size: 1.4rem;
-    margin-top: 2rem;
+    padding-top: 3rem;
+    color: #eee;
 }
 .col-3 {
     flex-basis: 40%;
     padding: 2rem;
-    padding-bottom: 10rem;
+    margin-bottom: 6rem;
 }
 .btn {
     display: inline-block;
@@ -87,7 +90,7 @@ body {
     font-size: 1.6rem;
     margin: 4rem 0;
     padding: 1rem 6rem;
-    box-shadow: rgba(0, 0, 0, 0.5);
+    box-shadow: 0.3rem 0.7rem rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: all 0.5s;
 }
@@ -97,14 +100,14 @@ body {
     color: #fff;
 }
 
+
 /* ----------Footer---------- */
 
 .footer {
     display: flex;
     justify-content: space-between;
     flex: 0;
-    width: 100%;
-    /* margin-bottom: 2rem; */
+    margin-bottom: 2rem;
 }
 .attribution {
     flex-basis: 50%;
@@ -141,4 +144,72 @@ body {
 .socials img:hover {
     filter: brightness(0) saturate(100%) invert(82%) sepia(47%) 
     saturate(3377%) hue-rotate(236deg) brightness(94%) contrast(93%);
+}
+
+
+/* ----------Media Queries---------- */
+
+@media only screen and (max-width: 60rem) {
+    body {
+        background: url(images/bg-mobile.svg) no-repeat hsl(257, 40%, 49%);
+        background-size: cover;
+    }
+    .main-pg-container {
+        max-width: 50rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .header .row {
+        padding: 0;
+    }
+    .logo img {
+        width: 100%;
+        height: 4rem;
+        padding-top: 1rem;
+    }
+    .row {
+        text-align: center;
+    }
+    .col-1 img {
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+    .col-2 {
+        flex-basis: 100%;
+        margin: 0;
+        padding-top: 0;
+        padding-bottom: 1.5rem;
+    }
+    .col-3 h1 {
+        font-size: 2.2rem;
+        line-height: 3rem;
+        padding-top: 1.2rem;
+    }
+    .col-3 p {
+        font-size: 1.3rem;
+        line-height: 1.9rem;
+        padding-top: 1.2rem;
+    }
+    .btn {
+        font-size: 1.4rem;
+        margin: 3rem 0;
+        padding: 0.5rem 5.5rem;
+        box-shadow: 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+    }
+    .footer {
+        display: flex;
+        align-items: center;
+    }
+    .attribution {
+        display: none;
+        /* writing-mode: vertical-lr; */
+    }
+    .socials-container {
+        padding-bottom: 2.5rem;
+        padding-right: 7.5rem;
+    }
+    .socials img {
+        width: 1.3rem;
+        height: 1.3rem;
+    }
 }
