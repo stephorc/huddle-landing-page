@@ -12,25 +12,122 @@ html {
     font-size: 62.5%;
 }
 
-/* ----------Common Styles END---------- */
-
-.header {
-    background: linear-gradient(hsl(257, 40%, 49%),hsl(300, 69%, 71%));
+body {
+    background: url(images/bg-desktop.svg) no-repeat hsl(257, 40%, 49%);
+    background-size: cover;
+    height: 100vh;
 }
 
-.navbar {}
-.logo {}
-.row {}
-.col-2 {}
-.btn {}
+/* ----------Common Styles END---------- */
 
+.main-pg-container {
+    max-width: 130rem;
+    margin: auto;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.header .row {
+    margin-top: 3rem;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+.logo img {
+    width: 100%;
+    height: 5rem;
+    margin-top: 2rem;
+}
+
+/* --------Header Columns-------- */
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex: 1;
+}
+.col-1 {
+   padding: 3rem;
+   flex-basis: 60%;
+}
+.col-1 img {
+    max-width: 100%;
+    padding: 2rem 0;
+}
+.col-2 {
+    min-width: 30rem;
+    color: #fff;
+}
+.col-2 h1 {
+    font-size: 3.5rem;
+    line-height: 5rem;
+}
+.col-2 p {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+}
+.col-3 {
+    flex-basis: 40%;
+    padding: 2rem;
+}
+.btn {
+    display: inline-block;
+    border: 0.1rem solid #fff;
+    background-color: #fff;
+    color: hsl(300, 69%, 71%);
+    border-radius: 3rem;
+    font-size: 1.6rem;
+    margin: 4rem 0;
+    padding: 1rem 6rem;
+    box-shadow: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.btn:hover {
+    border: 0.1rem solid hsl(300, 69%, 71%);
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+}
 
 /* ----------Footer---------- */
 
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex: 0;
+}
 .attribution {
+    flex-basis: 50%;
     font-size: 1.1rem;
     text-align: center;
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+.socials-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+}
+.socials img {
+    width: 2rem;
+    height: 2rem;
+    filter: invert(100%);
+}
+.socials {
+    display: flex;
+    border: 0.1rem solid #fff;
+    border-radius: 50%;
+    padding: 1rem 1.2rem;
+    align-items: center;
+    justify-content: center;
+}
+.socials:hover {
+    border: 0.1rem solid #fff;
+    background-color: #fff;
+}
+.socials img:hover {
+    filter: brightness(0) saturate(100%) invert(82%) sepia(47%) 
+    saturate(3377%) hue-rotate(236deg) brightness(94%) contrast(93%);
 }
