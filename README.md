@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![alt text](https://github.com/stephorc/huddle-landing-page/blob/main/Solution%20-%20Frontend%20Mentor%20-%20Huddle%20landing%20page%20with%20single%20introductory%20section.png)
+![alt text](https://github.com/stephorc/huddle-landing-page/blob/main/Solution-%20Frontend%20Mentor%20-%20Huddle%20landing%20page%20with%20single%20introductory%20section.png)
 
 <!-- ### Links
 
