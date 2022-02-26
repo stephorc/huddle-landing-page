@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![My solution](Solution - Frontend Mentor - Huddle landing page with single introductory section.jpg)
+![alt text](https://github.com/stephorc/huddle-landing-page/blob/main/Solution - Frontend Mentor - Huddle landing page with single introductory section.jpg?raw=true)
 
 <!-- ### Links
 
