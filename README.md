@@ -73,10 +73,14 @@ I'd like to continue focusing on refactoring in future projects. I'm always awed
 
 ### Useful resources
 
-- [stackoverflow](https://stackoverflow.com/questions/15162148/100-width-height-background-image-not-working) - The more you learn, the more you forget the small stuff. A resource I use often.
-- [stackoverflow](https://stackoverflow.com/questions/51852468/create-a-perfect-circle-with-css) - This one helped me to see that I needed to resize all my social icons to create more perfect circles.
+- [stackoverflow](https://stackoverflow.com/questions/15162148/100-width-height-background-image-not-working) - The more you learn, the more you forget the small stuff when trying to go back to the basics. This website is a resource I use often.
+
+- [stackoverflow](https://stackoverflow.com/questions/26816091/hover-effect-affecting-both-svg-icon-and-text-content-in-a-html-link-element) - This one helped me to see that I needed to resize all my social icons into perfect squares to make their border-radius' more circular.
+
+- [stackoverflow](https://stackoverflow.com/questions/15162148/100-width-height-background-image-not-working) - I'd accidentally set the width as max-width: 100vw instead of width: 100%.
 
 - [CSS Filter Generator](https://angel-rs.github.io/css-color-filter-generator/) - Cool rgb to filter converter I use often.
+
 - [Color Converter](https://www.rapidtables.com/convert/color/hsl-to-rgb.html) - Cool hsl to rgb converter I use often.
 
 - [Google Fonts](https://fonts.google.com/) - Good ol' Google Fonts.
