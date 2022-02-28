@@ -13,9 +13,11 @@ html {
 }
 
 body {
-    background: url(images/bg-desktop.svg) no-repeat hsl(257, 40%, 49%);
+    background: url(images/bg-desktop.svg) no-repeat center hsl(257, 40%, 49%);
+    overflow: hidden;
     background-size: cover;
-    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
 }
 
 /* ----------Common Styles END---------- */
@@ -107,28 +109,45 @@ body {
     display: flex;
     justify-content: space-between;
     flex: 0;
-    margin-bottom: 2rem;
+    padding-bottom: 2rem;
 }
 .attribution {
+    display: inline-block;
     flex-basis: 50%;
     font-size: 1.1rem;
     text-align: center;
+    color: #000;
 }
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: hsl(228, 40%, 59%);
+    transition: all 0.5s;
+}
+.attribution a:hover {
+    color: hsl(228, 100%, 78%);
+}
+.attribution a:focus {
+    color: hsl(228, 100%, 75%);
+    text-decoration: underline;
+}
+.col-4 {
+    flex-basis: 50%;
+    max-width: 100%;
+    padding: 1.5rem 2rem 0 2rem;
 }
 .socials-container {
     display: flex;
     justify-content: flex-end;
+    flex-direction: row;
     gap: 1.5rem;
 }
-.socials img {
+div .socials img {
+    display: block;
+    max-width: 100%;
     width: 2rem;
     height: 2rem;
     filter: invert(100%);
 }
 .socials {
-    display: flex;
     border: 0.1rem solid #fff;
     border-radius: 50%;
     padding: 1rem 1.2rem;
@@ -141,7 +160,7 @@ body {
     border: 0.1rem solid #fff;
     background-color: #fff;
 }
-.socials img:hover {
+.socials:hover > img {
     filter: brightness(0) saturate(100%) invert(82%) sepia(47%) 
     saturate(3377%) hue-rotate(236deg) brightness(94%) contrast(93%);
 }
@@ -152,10 +171,10 @@ body {
 @media only screen and (max-width: 60rem) {
     body {
         background: url(images/bg-mobile.svg) no-repeat hsl(257, 40%, 49%);
-        background-size: cover;
+        background-size: center;
     }
     .main-pg-container {
-        max-width: 50rem;
+        max-width: 30rem;
         padding-left: 1.5rem;
         padding-right: 1.5rem;
     }
@@ -171,7 +190,7 @@ body {
         text-align: center;
     }
     .col-1 img {
-        padding-top: 1rem;
+        padding-top: 1.5rem;
         padding-bottom: 2rem;
     }
     .col-2 {
@@ -184,10 +203,11 @@ body {
         font-size: 2.2rem;
         line-height: 3rem;
         padding-top: 1.2rem;
+        padding-bottom: 1.3rem;
     }
     .col-3 p {
-        font-size: 1.3rem;
-        line-height: 1.9rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
         padding-top: 1.2rem;
     }
     .btn {
@@ -200,13 +220,20 @@ body {
         display: flex;
         align-items: center;
     }
+    .col-4 {
+        flex-basis: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
     .attribution {
-        display: none;
-        /* writing-mode: vertical-lr; */
+        position: absolute;
+        top: 72rem;
+        right: 2.5rem;
     }
     .socials-container {
-        padding-bottom: 2.5rem;
-        padding-right: 7.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .socials img {
         width: 1.3rem;
