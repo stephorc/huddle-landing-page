@@ -168,10 +168,16 @@ div .socials img {
 
 /* ----------Media Queries---------- */
 
-@media only screen and (max-width: 60rem) {
+@media only screen and (max-width: 144rem) {
     body {
-        background: url(images/bg-mobile.svg) no-repeat hsl(257, 40%, 49%);
-        background-size: center;
+        overflow: scroll;
+    }
+}
+
+@media only screen and (max-width: 40rem) {
+    body {
+        background: hsl(257, 40%, 49%) url(images/bg-mobile.svg) top no-repeat;
+        background-size: 100vw;
     }
     .main-pg-container {
         max-width: 30rem;
@@ -223,12 +229,7 @@ div .socials img {
     .col-4 {
         flex-basis: 100%;
         max-width: 100%;
-        padding: 0;
-    }
-    .attribution {
-        position: absolute;
-        top: 72rem;
-        right: 2.5rem;
+        padding: 1.5rem;
     }
     .socials-container {
         display: flex;
