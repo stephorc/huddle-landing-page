@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Steph O.">
+  <meta name="description" content="This website is my (html/css) solution to Frontend Mentor's Huddle landing page.">
   
   <title>Frontend Mentor | Huddle landing page with single introductory section</title>
   
@@ -17,16 +19,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
   <!-- FontAwesome CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
 
   <div class="main-pg-container">
-    <div class="header">
+    <header>
       <div class="navbar">
         <div class="logo">
-          <img src="images/logo.svg" alt="Huddle">
+          <img src="images/logo.svg" alt="Huddle logo">
         </div>
         <!-- <nav>
           <ul>
@@ -37,11 +39,14 @@
           </ul>
         </nav> -->
       </div>
-      <div class="row">
-        <div class="col-1 col-2">
-          <img src="images/illustration-mockups.svg" alt="mockup">
+    </header>
+
+    <main>
+      <article class="row">
+        <div class="col col-1">
+          <img src="images/illustration-mockups.svg" alt="mockup illustration" title="Better experience, better community.">
         </div>
-        <div class="col-2 col-3">
+        <div class="col col-2">
           <h1>
             Build The Community Your Fans Will Love
           </h1>
@@ -51,29 +56,27 @@
           </p>
           <div class="btn">Register</div>
         </div>
-      </div>
-    </div>
+      </article>
+    </main>
 
     <footer>
       <div class="row">
-        <div class="col-4">
+        <div class="col ftr ftr-col-1">
           <p class="attribution">
             Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-            Coded by <a href="https://github.com/stephorc/huddle-landing-page">Steph O.</a>.
+            Coded by <a href="https://github.com/stephorc/huddle-landing-page" target="_blank"><abbr title="Me">Steph O.</abbr></a>.
           </p>
         </div>
-        <div class="col-4">
-          <div class="socials-container">
-            <div class="socials">
-              <img src="images/facebook.svg" alt="facebook">
-            </div>
-            <div class="socials">
-              <img src="images/twitter.svg" alt="twitter">
-            </div>
-            <div class="socials">
-              <img src="images/Instagram.svg" alt="Instagram">
-            </div>
+        <div class="col ftr ftr-col-2">
+          <div class="socials">
+            <i class="fa-brands fa-facebook-f"></i>
           </div>
+          <div class="socials">
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+          <div class="socials">
+            <i class="fa-brands fa-instagram"></i>
+          </div>  
         </div>
       </div>
     </footer>
