@@ -71,7 +71,7 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 
 ### Continued development
 
-I'd like to continue focusing on refactoring in future projects. I'm always awed when people can create sites in half the code I thought was necessary. It's like finding cheat codes to improve your favorite game.
+I'd like to continue focusing on flex/grid and refactoring, in future projects.
 
 ### Useful resources
 

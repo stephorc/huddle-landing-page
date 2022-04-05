@@ -11,7 +11,7 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background: url(images/bg-desktop.svg) no-repeat hsl(257, 40%, 49%);
+  background: url(images/bg-mobile.svg) no-repeat hsl(257, 40%, 49%);
   background-size: contain;
 }
 
@@ -91,7 +91,7 @@ img {
   font-size: 1.3rem;
   margin: 4rem 0;
   padding: .9rem 6.5rem;
-  box-shadow: .5rem 1rem .8rem rgba(0, 0, 0, 0.1);
+  box-shadow: .5rem 1rem .5rem rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: all .5s;
 }
@@ -150,6 +150,7 @@ img {
 
 @media (min-width: 1024px) {
   body {
+    background: url(images/bg-desktop.svg) no-repeat hsl(257, 40%, 49%);
     background-size: cover;
     min-height: 100vh;
   }
