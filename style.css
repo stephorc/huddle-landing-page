@@ -7,8 +7,6 @@
 html { font-size: 62.5%; }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   background: url(images/bg-mobile.svg) no-repeat hsl(257, 40%, 49%);
