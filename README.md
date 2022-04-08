@@ -40,8 +40,7 @@ Users should be able to:
 ### Built with
 
 - Semantic & Non-semantic HTML5 markup
-- CSS custom properties
-- Flexbox
+- CSS Flexbox
 - Mobile-first workflow
 <!-- - [React](https://reactjs.org/) - JS library
 - [Next.js](https://nextjs.org/) - React framework
